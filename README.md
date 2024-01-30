@@ -1,1 +1,3 @@
 # IntelliGuardWebScan
+
+In today’s world specially after covid the people are mostly reliable on the online shopping platforms and these platforms frequently uses the dark pattern to deviate and manipulate the users the thing they are not intended to do so. There are various previous models that are predicting the dark pattern but they are time consuming and do not possess much accuracy. So here we present our browser extension which is predicting the dark pattern on the basis of text using a machine learning model. It uses natural language processing to detect the various dark patterns in the website. We get the dark pattern dataset from various open source. This model increases the awareness among people and guard them from various dark patterns.
