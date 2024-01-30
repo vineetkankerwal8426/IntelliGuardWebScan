@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Playfair+Display:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Palanquin&family=Playfair+Display:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <title>DPBH</title>
+    <script src="popup.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .extension {
+
+            min-height: 550px;
+            min-width: 450px;
+            /* background: rgb(114, 50, 174);
+            background: linear-gradient(45deg, rgba(114, 50, 174, 0.9248949579831933) 5%, rgba(135, 32, 186, 1) 49%, rgba(178, 21, 188, 0.9389005602240896) 90%); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: rgb(47, 46, 50);
+            background: linear-gradient(45deg, rgba(47, 46, 50, 1) 32%, rgba(40, 31, 40, 1) 98%);
+        }
+
+        .urlform {
+            display: flex;
+            /* position: absolute; */
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+
+        .urltext {
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(203, 200, 200);
+            font-family: 'Nova Square', sans-serif;
+
+        }
+
+        #userInput {
+            border-radius: 10px;
+            padding: 4px;
+            margin: 3px;
+            text-align: center;
+            font-family: 'Quando', serif;
+
+        }
+
+        .urlbutton {
+            width: 90px;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 15px;
+            border: 2px solid rgb(72, 155, 72);
+            background: rgb(41, 161, 109);
+            background: linear-gradient(45deg, rgba(41, 161, 109, 1) 2%, rgba(14, 111, 71, 1) 46%, rgba(23, 124, 93, 1) 95%);
+            ;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .urlbutton:hover {
+            cursor: pointer;
+            color: rgb(173, 162, 159);
+        }
+
+        h2 {
+            color: white;
+            font-family: 'Big Shoulders Stencil Display', sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        #result {
+            font-family: 'Kreon', serif;
+            text-align: center;
+            color: rgb(228, 216, 216);
+            margin: 10px;
+            font-size: medium;
+        }
+
+        #result:hover {
+            cursor: pointer;
+            color: rgb(251, 0, 0);
+        }
+
+        #uniqueValues {
+            text-align: center;
+            margin: 10px;
+            color: white;
+
+        }
+
+        .DarkPatternTypes {
+            padding: 4px;
+            cursor: pointer;
+            font-size: medium;
+        }
+
+        .DarkPatternTypes:hover {
+            color: rgb(218, 46, 46);
+        }
+
+        #keysList {
+            text-align: center;
+            margin: 10px;
+            color: white;
+            /* margin-bottom: 2px; */
+
+        }
+
+        .KeysOfDarkPattern {
+            padding: 1px;
+            font-size: medium;
+            color: rgb(206, 196, 196);
+            font-family: 'Oranienbaum', serif;
+        }
+        .solvoid{
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+            position: fixed;
+            bottom: 0;
+            margin-top: 3px;
+            text-align: center;
+            width: 100%;
+            font-family: 'Kalam', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="extension">
+        <div class="urlform">
+            <h2>IntelliGuard WebScan</h2>
+            <form id="stringForm">
+                <label for="userInput" class="urltext">Enter URL:</label><br>
+                <input type="url" id="userInput" required /><br>
+                <button type="submit" class="urlbutton">SCAN</button>
+            </form>
+        </div>
+        <div id="result">
+
+        </div>
+        <div id="uniqueValues">
+
+        </div>
+
+
+        <div id="keysList">
+
+        </div>
+        <footer class="solvoid">
+            <span><strong>
+                    SOLVOID
+                </strong>
+                Product
+            </span>
+        </footer>
+    </div>
+
+</body>
+
+</html>
